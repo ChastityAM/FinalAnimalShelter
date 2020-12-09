@@ -4,20 +4,34 @@ import java.sql.Date;
 
 public class Animal {
 
-int idAnimal;
-String animalType;
-String animalStatus;
-Date animalDate;
-int locId;
-
+private int idAnimal;
+private String URL;
+private String animalType;
+private String animalStatus;
+private Date animalDate;
+private int locId;
 
 	public Animal() {
-
+		
+	}
+	
+	public Animal(String animalType, String animalStatus, Date animalDate, int locId) {
+		this.animalType = animalType;
+		this.animalStatus = animalStatus;
+		this.animalDate = animalDate;
+		this.locId = locId;
+	}
+	
+	public Animal(int idAnimal, String animalType, String animalStatus, Date animalDate, int locId, String URL) {
+		this.idAnimal = idAnimal;
+		this.animalType = animalType;
+		this.animalStatus = animalStatus;
+		this.animalDate = animalDate;
+		this.locId = locId;
+		this.URL = URL;
 	}
 
-	public void Animal(int idAnimal, String animalType, String animalStatus, Date animalDate, int locId) {
 
-	}
 
 	public int getIdAnimal() {
 		return idAnimal;
@@ -58,13 +72,21 @@ int locId;
 	public void setLocId(int locId) {
 		this.locId = locId;
 	}
-
-	@Override
-	public String toString() {
-		return "Animal [idAnimal=" + idAnimal + ", animalType=" + animalType + ", animalStatus=" + animalStatus
-				+ ", animalDate=" + animalDate + ", locId=" + locId + "]";
+	
+	
+	public String getURL() {
+		return URL;
 	}
 
+	public void setURL(String URL) {
+		this.URL = URL;
+	}
+	
+	@Override
+	public String toString() {
+		return "Animal [idAnimal=" + idAnimal + ", URL=" + URL + ", animalType=" + animalType + ", animalStatus="
+				+ animalStatus + ", animalDate=" + animalDate + ", locId=" + locId + "]";
+	}
 
 
 }
