@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -135,16 +136,12 @@
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 1</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cute-dogs-wallpapers1.jpg"
                         alt="Dog 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 2</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <br>
                 <div class="row container">
@@ -170,16 +167,12 @@
                         alt="Cat 1" height="150" width="150" class="rounded-circle cover">
                     <br><b>Cat 1</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm"><img
                         src="https://kpbs.media.clients.ellingtoncms.com/img/news/tease/2014/08/20/Cute_grey_kitten.jpg"
                         alt="Cat 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Cat 2</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -204,16 +197,12 @@
                         width="150" height="auto" class="rounded-circle">
                     <br><b>Parrot 1</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://www.thesprucepets.com/thmb/V_YLRlAIKfTutBEzmSYwyEJP7OU=/1975x1518/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg"
                         alt="Parrot 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Parot 2</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -238,16 +227,12 @@
                         alt="Snake 1" height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 1</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/11/BaM5JR1hOkP-1-png__700.jpg"
                         alt="Snake 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 2</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">

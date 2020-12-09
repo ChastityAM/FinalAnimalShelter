@@ -144,7 +144,6 @@
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 1</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="col text-center container-sm">
@@ -152,7 +151,6 @@
                         alt="Dog 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 2</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="col text-center container-sm">
@@ -160,7 +158,6 @@
                         alt="Dog 3" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 3</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="col text-center container-sm">
@@ -168,7 +165,6 @@
                         alt="Dog 4" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 4</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="col text-center container-sm">
@@ -176,7 +172,6 @@
                         alt="Dog 5" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 5</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="col text-center container-sm">
@@ -184,7 +179,6 @@
                         alt="Dog 6" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 6</b></br>
                     Date: <br>
-                    Status: <br>
                     Location:
                 </div>
                 <div class="row">
@@ -205,7 +199,6 @@
                     alt="Cat 1" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 1</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm"><img
@@ -213,7 +206,6 @@
                     alt="Cat 2" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 2</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -221,7 +213,6 @@
                     alt="Cat 3" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 3</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -229,7 +220,6 @@
                     alt="Cat 4" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 4</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -237,7 +227,6 @@
                     alt="Cat 5" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 5</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -245,7 +234,6 @@
                     width="150" class="rounded-circle cover">
                 <br><b>Cat 6</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <br>
@@ -266,7 +254,6 @@
                     width="150" height="auto" class="rounded-circle">
                 <br><b>Parrot 1</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -274,7 +261,6 @@
                     alt="Parrot 2" height="150" width="150" class="rounded-circle cover">
                 <br><b>Parrot 2</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm"><img src="
@@ -282,7 +268,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Parrot 3</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm"><img src="
@@ -290,7 +275,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Parrot 4</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm"><img src="
@@ -298,7 +282,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Parrot 5</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm"><img src="
@@ -306,7 +289,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Parrot 6</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <br>
@@ -327,7 +309,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Snake 1</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -335,7 +316,6 @@
                     alt="Snake 2" height="150" width="150" class="rounded-circle cover">
                 <br><b>Snake 2</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
 
@@ -344,7 +324,6 @@
                     width="150" class="rounded-circle cover">
                 <br><b>Snake 3</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -352,7 +331,6 @@
                     alt="Snake 4" height="150" width="150" class="rounded-circle cover">
                 <br><b>Snake 4</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -360,7 +338,6 @@
                     height="150" width="150" class="rounded-circle cover">
                 <br><b>Snake 5</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <div class="col text-center container-sm">
@@ -368,7 +345,6 @@
                     alt="Snake 6" height="150" width="150" class="rounded-circle cover">
                 <br><b>Snake 6</b></br>
                 Date: <br>
-                Status: <br>
                 Location:
             </div>
             <br>
