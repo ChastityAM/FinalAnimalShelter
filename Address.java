@@ -1,4 +1,4 @@
-package com.cognixia.jump.classes;
+package com.cognixia.jump.entities;
 
 public class Address {
 	 private int idAddress; 
