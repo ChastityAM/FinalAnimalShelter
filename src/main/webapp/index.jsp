@@ -57,6 +57,7 @@
         }
 
         main {
+            background-Image: url() background-repeat: no-repeat;
             background-size: cover;
         }
 
@@ -186,225 +187,212 @@
                     Status: <br>
                     Location:
                 </div>
-                <div class="row container">
-                    <div class="col-sm">
-                        <div class="row">
-                            <p>
-                                <button type="button" class="btn btn-secondary">
-                                    <div class="col center"></div>
-                                    More Inventory
-                                </button>
-                            </p>
-                        </div>
-                    </div>
+                <div class="row">
+                    <p>
+                        <button type="button" class="btn btn-secondary">
+                            <div class="col center"></div>
+                            More Inventory
+                        </button>
+                    </p>
                 </div>
             </div>
-            </br>
-            <h2 id="Cats"><u>Cats</u></h2>
+        </div>
+        <br>
+        <h2 id="Cats"><u>Cats</u></h2>
+        <div class="row">
+            <div class="col text-center container-sm"><img
+                    src="http://2.bp.blogspot.com/-k_IJQ-pxheI/T9ufytUpqaI/AAAAAAAAAEI/4SfFDfvy_RY/s1600/Cute-Cats-008.jpg"
+                    alt="Cat 1" height="150" width="150" class="rounded-circle cover">
+                <br><b>Cat 1</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm"><img
+                    src="https://kpbs.media.clients.ellingtoncms.com/img/news/tease/2014/08/20/Cute_grey_kitten.jpg"
+                    alt="Cat 2" height="150" width="150" class="rounded-circle cover">
+                <br><b>Cat 2</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="http://2.bp.blogspot.com/--mqQKXiTD0E/UIURXCYUxUI/AAAAAAAAHuQ/8jMmIdkdLX8/s1600/cats_desktop_1920x1200_hd-wallpaper-817100.jpeg"
+                    alt="Cat 3" height="150" width="150" class="rounded-circle cover">
+                <br><b>Cat 3</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NjYwNjE0LmFwcDczMTE1M19zY3JlZW5fN18xNTE3MDM4NDQ2XzAzNQ/screen-7.jpg?fakeurl=1&type=.jpg"
+                    alt="Cat 4" height="150" width="150" class="rounded-circle cover">
+                <br><b>Cat 4</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://1.bp.blogspot.com/-48udOdlnPuM/T9xVm2S3DyI/AAAAAAAAAHc/Ds_XFBWqRio/s1600/SY7CKKR4DJDX.jpg"
+                    alt="Cat 5" height="150" width="150" class="rounded-circle cover">
+                <br><b>Cat 5</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="http://wallpapers9.org/wp-content/uploads/2017/05/Cute-Cat-2.jpg" alt="Cat 6" height="150"
+                    width="150" class="rounded-circle cover">
+                <br><b>Cat 6</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <br>
             <div class="row">
-                <div class="col text-center container-sm"><img
-                        src="http://2.bp.blogspot.com/-k_IJQ-pxheI/T9ufytUpqaI/AAAAAAAAAEI/4SfFDfvy_RY/s1600/Cute-Cats-008.jpg"
-                        alt="Cat 1" height="150" width="150" class="rounded-circle cover">
-                    <br><b>Cat 1</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <div class="col text-center container-sm"><img
-                        src="https://kpbs.media.clients.ellingtoncms.com/img/news/tease/2014/08/20/Cute_grey_kitten.jpg"
-                        alt="Cat 2" height="150" width="150" class="rounded-circle cover">
-                    <br><b>Cat 2</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <div class="col text-center container-sm">
-                    <img src="http://2.bp.blogspot.com/--mqQKXiTD0E/UIURXCYUxUI/AAAAAAAAHuQ/8jMmIdkdLX8/s1600/cats_desktop_1920x1200_hd-wallpaper-817100.jpeg"
-                        alt="Cat 3" height="150" width="150" class="rounded-circle cover">
-                    <br><b>Cat 3</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <div class="col text-center container-sm">
-                    <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NjYwNjE0LmFwcDczMTE1M19zY3JlZW5fN18xNTE3MDM4NDQ2XzAzNQ/screen-7.jpg?fakeurl=1&type=.jpg"
-                        alt="Cat 4" height="150" width="150" class="rounded-circle cover">
-                    <br><b>Cat 4</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <div class="col text-center container-sm">
-                    <img src="https://1.bp.blogspot.com/-48udOdlnPuM/T9xVm2S3DyI/AAAAAAAAAHc/Ds_XFBWqRio/s1600/SY7CKKR4DJDX.jpg"
-                        alt="Cat 5" height="150" width="150" class="rounded-circle cover">
-                    <br><b>Cat 5</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <div class="col text-center container-sm">
-                    <img src="http://wallpapers9.org/wp-content/uploads/2017/05/Cute-Cat-2.jpg" alt="Cat 6" height="150"
-                        width="150" class="rounded-circle cover">
-                    <br><b>Cat 6</b></br>
-                    Date: <br>
-                    Status: <br>
-                    Location:
-                </div>
-                <br>
-                <div class="row container">
-                    <div class="col-sm">
-                        <div class="row">
-                            <p>
-                                <button type="button" class="btn btn-secondary">
-                                    <div class="col center"></div>
-                                    More Inventory
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <h2 id="Birds"><u>Birds</u></h2>
-                <div class="row">
-                    <div class="col text-center container-sm">
-                        <img src="https://www.sunnyskyz.com/uploads/2014/08/ohr4b-cutest-bird-ever.jpg" alt="Parrot 1"
-                            width="150" height="auto" class="rounded-circle">
-                        <br><b>Parrot 1</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <div class="col text-center container-sm">
-                        <img src="https://www.thesprucepets.com/thmb/V_YLRlAIKfTutBEzmSYwyEJP7OU=/1975x1518/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg"
-                            alt="Parrot 2" height="150" width="150" class="rounded-circle cover">
-                        <br><b>Parot 2</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <div class="col text-center container-sm"><img src="
+                <p>
+                    <button type="button" class="btn btn-secondary">
+                        <div class="col center"></div>
+                        More Inventory
+                    </button>
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2 id="Birds"><u>Birds</u></h2>
+        <div class="row">
+            <div class="col text-center container-sm">
+                <img src="https://www.sunnyskyz.com/uploads/2014/08/ohr4b-cutest-bird-ever.jpg" alt="Parrot 1"
+                    width="150" height="auto" class="rounded-circle">
+                <br><b>Parrot 1</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://www.thesprucepets.com/thmb/V_YLRlAIKfTutBEzmSYwyEJP7OU=/1975x1518/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg"
+                    alt="Parrot 2" height="150" width="150" class="rounded-circle cover">
+                <br><b>Parrot 2</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm"><img src="
                 https://s-media-cache-ak0.pinimg.com/736x/b4/50/f1/b450f1b0b2d1d44019124dd28ffe5775.jpg" alt="Parrot 3"
-                            height="150" width="150" class="rounded-circle cover">
-                        <br><b>Parot 3</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <div class="col text-center container-sm"><img src="
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Parrot 3</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm"><img src="
                 https://images.freeimages.com/images/large-previews/94c/cute-parrot-1349232.jpg" alt="Parrot 4"
-                            height="150" width="150" class="rounded-circle cover">
-                        <br><b>Parot 4</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <div class="col text-center container-sm"><img src="
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Parrot 4</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm"><img src="
                 https://i.pinimg.com/originals/de/5f/cd/de5fcd012bfd55db59d576d3d2ff71c6.jpg" alt="Parrot 5"
-                            height="150" width="150" class="rounded-circle cover">
-                        <br><b>Parot 5</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <div class="col text-center container-sm"><img src="
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Parrot 5</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm"><img src="
                 http://media-cache-ec0.pinimg.com/236x/1f/77/24/1f772444f60f630be806ecd5b9fff339.jpg" alt="Parrot 6"
-                            height="150" width="150" class="rounded-circle cover">
-                        <br><b>Parot 6</b></br>
-                        Date: <br>
-                        Status: <br>
-                        Location:
-                    </div>
-                    <br>
-                    <div class="row container">
-                        <div class="col-sm">
-                            <div class="row">
-                                <p>
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class="col center"></div>
-                                        More Inventory
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <h2 id="Snakes"><u>Snakes</u></h2>
-                    <div class="row">
-                        <div class="col text-center container-sm">
-                            <img src="https://www.elitereaders.com/wp-content/uploads/2017/11/Adorable-Snakes-17.jpg"
-                                alt="Snake 1" height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 1</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
-                        <div class="col text-center container-sm">
-                            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/11/BaM5JR1hOkP-1-png__700.jpg"
-                                alt="Snake 2" height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 2</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Parrot 6</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <br>
+            <div class="row">
+                <p>
+                    <button type="button" class="btn btn-secondary">
+                        <div class="col center"></div>
+                        More Inventory
+                    </button>
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2 id="Snakes"><u>Snakes</u></h2>
+        <div class="row">
+            <div class="col text-center container-sm">
+                <img src="https://www.elitereaders.com/wp-content/uploads/2017/11/Adorable-Snakes-17.jpg" alt="Snake 1"
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Snake 1</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/11/BaM5JR1hOkP-1-png__700.jpg"
+                    alt="Snake 2" height="150" width="150" class="rounded-circle cover">
+                <br><b>Snake 2</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
 
-                        <div class="col text-center container-sm">
-                            <img src="https://listabuzz.com/wp-content/uploads/2015/03/tiny-snakes.jpg" alt="Snake 3"
-                                height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 3</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
-                        <div class="col text-center container-sm">
-                            <img src="http://tailandfur.com/wp-content/uploads/2016/02/30-Small-Snake-Pictures-in-Human-Hands-40.jpg"
-                                alt="Snake 4" height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 4</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
-                        <div class="col text-center container-sm">
-                            <img src="https://i.pinimg.com/originals/e2/dd/1f/e2dd1fa8319ce9a31febd29d4ae8b6f9.jpg"
-                                alt="Snake 5" height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 5</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
-                        <div class="col text-center container-sm">
-                            <img src="https://68.media.tumblr.com/f299c1e0b26079101a35a0336310b691/tumblr_org6i00hC21vx2cajo1_500.jpg"
-                                alt="Snake 6" height="150" width="150" class="rounded-circle cover">
-                            <br><b>Snake 6</b></br>
-                            Date: <br>
-                            Status: <br>
-                            Location:
-                        </div>
-                        <br>
-                        <div class="row container">
-                            <div class="col-sm">
-                                <div class="row">
-                                    <p>
-                                        <button type="button" class="btn btn-secondary">
-                                            <div class="col center"></div>
-                                            More Inventory
-                                        </button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col-md-8">
-                            We've been housing more than 90% of animals since 2020.</em></br>
-                            We love what we do, and hope to serve you! </p>
+            <div class="col text-center container-sm">
+                <img src="https://listabuzz.com/wp-content/uploads/2015/03/tiny-snakes.jpg" alt="Snake 3" height="150"
+                    width="150" class="rounded-circle cover">
+                <br><b>Snake 3</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="http://tailandfur.com/wp-content/uploads/2016/02/30-Small-Snake-Pictures-in-Human-Hands-40.jpg"
+                    alt="Snake 4" height="150" width="150" class="rounded-circle cover">
+                <br><b>Snake 4</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://i.pinimg.com/originals/e2/dd/1f/e2dd1fa8319ce9a31febd29d4ae8b6f9.jpg" alt="Snake 5"
+                    height="150" width="150" class="rounded-circle cover">
+                <br><b>Snake 5</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <div class="col text-center container-sm">
+                <img src="https://68.media.tumblr.com/f299c1e0b26079101a35a0336310b691/tumblr_org6i00hC21vx2cajo1_500.jpg"
+                    alt="Snake 6" height="150" width="150" class="rounded-circle cover">
+                <br><b>Snake 6</b></br>
+                Date: <br>
+                Status: <br>
+                Location:
+            </div>
+            <br>
+            <div class="row">
+                <p>
+                    <button type="button" class="btn btn-secondary">
+                        <div class="col center"></div>
+                        More Inventory
+                    </button>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-8">
+            We've been housing more than 90% of animals since 2020.</em></br>
+            We love what we do, and hope to serve you! </p>
 
-                            <iframe width="644" height="362" src="https://www.youtube.com/embed/MTRsov46jmk"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
+            <iframe width="644" height="362" src="https://www.youtube.com/embed/MTRsov46jmk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
 
-                            </iframe>
-                        </div>
-                        <br>
+            </iframe>
+        </div>
+        <br>
     </aside>
 
     <footer class="container-fluid"><b>
