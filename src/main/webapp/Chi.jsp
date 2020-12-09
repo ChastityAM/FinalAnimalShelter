@@ -1,5 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -134,16 +135,12 @@
                         alt="Dog 5" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 5</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://1.bp.blogspot.com/-fGPjMm8WagY/T6TJE00mrcI/AAAAAAAAEfs/Ee-bbjwd8YI/s1600/Cute-Puppy-puppies-wallpapers-06.jpg"
                         alt="Dog 6" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 6</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <br>
                 <div class="row container">
@@ -169,16 +166,12 @@
                         alt="Cat 5" height="150" width="150" class="rounded-circle cover">
                     <br><b>Cat 5</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://wallpapers9.org/wp-content/uploads/2017/05/Cute-Cat-2.jpg" alt="Cat 6" height="150"
                         width="150" class="rounded-circle cover">
                     <br><b>Cat 6</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -203,16 +196,12 @@
                         alt="Parrot 5" height="150" width="150" class="rounded-circle cover">
                     <br><b>Parrot 5</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://media-cache-ec0.pinimg.com/236x/1f/77/24/1f772444f60f630be806ecd5b9fff339.jpg"
                         alt="Parrot 6" height="150" width="150" class="rounded-circle cover">
                     <br><b>Parrot 6</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -237,16 +226,12 @@
                         alt="Snake 5" height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 5</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://68.media.tumblr.com/f299c1e0b26079101a35a0336310b691/tumblr_org6i00hC21vx2cajo1_500.jpg"
                         alt="Snake 6" height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 6</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -285,8 +270,8 @@
                     Donate<br>
                 </div>
                 <div>
-                    <img src="C:\Java Workspace\Group Project\Animal-Shelter\ChicagoMap.jpg" alt="Chicago map"
-                        height="150" width="auto" class="mx-auto d-block rounded">
+                    <img src="FinalAnimalShelter.src.main.webapp.maps.ChicagoMap.jpg" alt="Chicago map" height="150"
+                        width="auto" class="mx-auto d-block rounded">
                 </div>
             </div>
     </footer>
