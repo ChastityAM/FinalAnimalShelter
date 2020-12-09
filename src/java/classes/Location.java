@@ -1,40 +1,67 @@
 package com.cognixia.jump.entities;
 
 public class Location {
+	
 private	int idLocation;
-private	String locationAddress;
+private	String name;
+private String phone;
+private int address;
 
-	public Location() {
-		
-	}
-	public Location( String locationAddress) {
-		
-		this.locationAddress = locationAddress;
-	}
+public Location() {
+	
+}
 
-	public Location(String locationAddress, int idLocation) {
-		this.locationAddress = locationAddress;
-		this.idLocation = idLocation;
-	}
+public Location(String name, String phone, int address) {
 
-	public int getIdLocation() {
-		return idLocation;
-	}
+	this.name = name;
+	this.phone = phone;
+	this.address = address;
+}
 
-	public void setIdLocation(int idLocation) {
-		this.idLocation = idLocation;
-	}
+public Location(int idLocation, String name, String phone, int address) {
+	
+	this.idLocation = idLocation;
+	this.name = name;
+	this.phone = phone;
+	this.address = address;
+}
 
-	public String getLocationAddress() {
-		return locationAddress;
-	}
+public int getIdLocation() {
+	return idLocation;
+}
 
-	public void setLocationAddress(String locationAddress) {
-		this.locationAddress = locationAddress;
-	}
+public void setIdLocation(int idLocation) {
+	this.idLocation = idLocation;
+}
 
-	@Override
-	public String toString() {
-		return "Location [idLocation=" + idLocation + ", locationAddress=" + locationAddress + "]";
-	}	
-} 
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public String getPhone() {
+	return phone;
+}
+
+public void setPhone(String phone) {
+	this.phone = phone;
+}
+
+public int getAddress() {
+	return address;
+}
+
+public void setAddress(int address) {
+	this.address = address;
+}
+
+@Override
+public String toString() {
+	return "Location [idLocation=" + idLocation + ", name=" + name + ", phone=" + phone + ", address=" + address + "]";
+}
+
+
+}
