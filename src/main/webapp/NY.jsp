@@ -1,5 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -135,16 +136,12 @@
                         alt="Dog 3" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 3</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://dogsaholic.com/wp-content/uploads/2015/05/Boo-the-cutest-pomeranian-dog.jpg"
                         alt="Dog 4" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 4</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <br>
                 <div class="row container">
@@ -170,16 +167,12 @@
                         alt="Cat 3" height="150" width="150" class="rounded-circle cover">
                     <br><b>Cat 3</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NjYwNjE0LmFwcDczMTE1M19zY3JlZW5fN18xNTE3MDM4NDQ2XzAzNQ/screen-7.jpg?fakeurl=1&type=.jpg"
                         alt="Cat 4" height="150" width="150" class="rounded-circle cover">
                     <br><b>Cat 4</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -204,16 +197,12 @@
                         alt="Parrot 3" height="150" width="150" class="rounded-circle cover">
                     <br><b>Parrot 3</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://images.freeimages.com/images/large-previews/94c/cute-parrot-1349232.jpg"
                         alt="Parrot 4" height="150" width="150" class="rounded-circle cover">
                     <br><b>Parrot 4</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -238,16 +227,12 @@
                         height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 3</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://tailandfur.com/wp-content/uploads/2016/02/30-Small-Snake-Pictures-in-Human-Hands-40.jpg"
                         alt="Snake 4" height="150" width="150" class="rounded-circle cover">
                     <br><b>Snake 4</b></br>
                     Date: <br>
-                    Status: <br>
-                    Location:
                 </div>
                 <div class="row container">
                     <div class="col-sm">
@@ -285,7 +270,7 @@
                     Donate<br>
                 </div>
                 <div>
-                    <img src="C:\Java Workspace\Group Project\Animal-Shelter\NYmap.jpg" alt="New York map" height="150"
+                    <img src="FinalAnimalShelter.src.main.webapp.maps.NYMap.jpg" alt="New York map" height="150"
                         width="auto" class="mx-auto d-block rounded">
                 </div>
             </div>
