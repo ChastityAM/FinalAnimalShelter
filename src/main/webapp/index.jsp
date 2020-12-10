@@ -134,6 +134,21 @@
             height="350" width="auto" class="mx-auto d-block rounded">
     </div>
     <aside>
+    <div class="container">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Adoptable Animal List</h1>
+					<p class="Lead"> The information for all available animals is below.
+					</p>
+			</div>
+		</div>
+		<c:forEach var="animal" items= "${allAnimals}">
+			<p><c:out value= "${animal.type}"/></p>
+			<p><c:out value= "${animal.status}"/></p>
+			<p><c:out value= "${animal.date}"/></p>
+			<p><c:out value= "${animal.image}"/></p>
+		</c:forEach>
+	</div>
         <title> Animals</title>
 
         <h2 id="Dogs"><u>Dogs</u></h2>
