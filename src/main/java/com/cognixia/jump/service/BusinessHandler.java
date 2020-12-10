@@ -63,8 +63,14 @@ public class BusinessHandler {
 		
 	}
 	
+	public boolean deleteAnimalById(int id) {
+		return new EntityHandler<Animal,Object>(Animal.class).deleteById(id);
+	}
+	public boolean addAnimal(Animal animal) {
+		return new EntityHandler<Animal,Object>(Animal.class).create(animal);
+	}
 	
-	public static void main(String[] args) {
-		new BusinessHandler().getAllAvailableAnimalsByLocation(ShelterLocation.CHICAGO).stream().forEach(a->System.out.println(a));
+	public Integer updateAnimal(Animal animal) {
+		return new EntityHandler<Animal,Object>(Animal.class).update(animal);
 	}
 }
