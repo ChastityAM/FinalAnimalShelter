@@ -1,4 +1,4 @@
-package com.cognixia.jump.constants;
+package com.cognixia.jump.enums;
 
 public enum Crud {
 	CREATE("INSERT INTO "	, " VALUES"),

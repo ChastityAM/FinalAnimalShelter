@@ -1,4 +1,4 @@
-package com.cognixia.jump.entities;
+package com.cognixia.jump.classes;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package com.cognixia.jump.dao.abstracts;
+package com.cognixia.jump.dao;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;

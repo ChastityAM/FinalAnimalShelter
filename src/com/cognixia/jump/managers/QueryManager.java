@@ -1,4 +1,4 @@
-package com.cognixia.jump.util.db;
+package com.cognixia.jump.managers;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;

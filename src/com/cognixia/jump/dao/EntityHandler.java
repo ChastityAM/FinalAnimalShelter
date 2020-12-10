@@ -1,4 +1,4 @@
-package com.cognixia.jump.dao.impl;
+package com.cognixia.jump.dao;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.ResultSet;

@@ -1,4 +1,4 @@
-package com.cognixia.jump.constants;
+package com.cognixia.jump.enums;
 
 public enum AnimalType {
 	CAT("Cat"),

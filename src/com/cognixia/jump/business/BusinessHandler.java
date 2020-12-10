@@ -1,4 +1,4 @@
-package com.cognixia.jump.bo;
+package com.cognixia.jump.business;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

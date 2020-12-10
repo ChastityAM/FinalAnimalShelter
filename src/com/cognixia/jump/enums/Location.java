@@ -1,4 +1,4 @@
-package com.cognixia.jump.constants;
+package com.cognixia.jump.enums;
 
 public enum Location {
 	NEW_YORK("New York", "NY", 1),

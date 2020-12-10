@@ -1,4 +1,4 @@
-package com.cognixia.jump.util.reflection;
+package com.cognixia.jump.managers;
 
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;

@@ -1,4 +1,4 @@
-package com.cognixia.jump.util.db;
+package com.cognixia.jump.managers;
 
 
 import java.io.File;
