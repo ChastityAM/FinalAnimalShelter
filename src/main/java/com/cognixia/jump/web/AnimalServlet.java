@@ -1,6 +1,7 @@
 package com.cognixia.jump.web;
 
 import java.io.IOException;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -13,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cognixia.jump.enums.ShelterLocation;
 import com.cognixia.jump.managers.ConnectionManager;
-import com.cognixia.jump.model.Product;
 import com.cognixia.jump.models.Animal;
 import com.cognixia.jump.service.BusinessHandler;
 
@@ -34,11 +34,7 @@ public class AnimalServlet extends HttpServlet {
 			
 			doGet(request, response);
 		}
-		protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-				throws ServletException, IOException {
-			
-			doGet(request, response);
-		}
+		
 
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 				throws ServletException, IOException {
@@ -48,27 +44,28 @@ public class AnimalServlet extends HttpServlet {
 			String action = request.getServletPath();
 			
 			switch (action) {
-			case "/list":
-				listProducts(request, response);
+			
+			case "/":
+				listAnimals(request, response);
 				break;
 			case "/delete":
-				deleteProduct(request, response);
+				deleteAnimal(request, response);
 				break;
 			case "/edit":
-				goToEditProductForm(request, response);
+				goToEditAnimalForm(request, response);
 				break;
 			case "/update":
-				editProduct(request, response);
+				editAnimal(request, response);
 				break;
 			case "/new":
-				goToNewProductForm(request, response);
+				goToNewAnimalForm(request, response);
 				break;
 			case "/insert":
-				addNewProduct(request, response);
+				addNewAnimal(request, response);
 				break;
 
 			default:  // default will just go to our index.jsp page
-				response.sendRedirect("/CrudProject2");
+				response.sendRedirect("/FinalAnimalShelter");
 				break;
 			}
 			
@@ -88,83 +85,87 @@ public class AnimalServlet extends HttpServlet {
 
 		
 		
-		private void listProducts(HttpServletRequest request, HttpServletResponse response) 
+		private void listAnimals(HttpServletRequest request, HttpServletResponse response) 
 				throws ServletException, IOException {
 			
-			List<Product> allProducts = productDao.getAllProducts();
-			System.out.println("called, allProducts = " + allProducts);
-			
-			request.setAttribute("allProducts", allProducts);
-			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("product-list.jsp");
-			
-			dispatcher.forward(request, response);
-		}
+			        //Use DAO to get list of animals from database
+			        List<Animal> allAnimals = businessHandler.getAllAvailableAnimals();
+			       
+			        //Store the list of animals above into a request object that can go to a JSP
+			        request.setAttribute("allAnimals",  allAnimals);
+			        
+			        //Say where that request object above is going to go
+			        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+			        
+			        //sendit
+			        dispatcher.forward(request, response);
+			    }
 		
-		private void deleteProduct(HttpServletRequest request, HttpServletResponse response) 
+		
+		private void deleteAnimal(HttpServletRequest request, HttpServletResponse response) 
 				throws ServletException, IOException {
 			
 			int id = Integer.parseInt(request.getParameter("id"));
 			
-			if (productDao.deleteProduct(id)) {
-				System.out.println("Deleted product ID#" + id);
+			if (businessHandler.deleteAnimalById(id)) {
+				System.out.println("Deleted animal ID#" + id);
 			};
 			
 			response.sendRedirect("list");
 		}
 		
-		private void goToEditProductForm(HttpServletRequest request, HttpServletResponse response) 
+		private void goToEditAnimalForm(HttpServletRequest request, HttpServletResponse response) 
 				throws ServletException, IOException {
 			
 			int id = Integer.parseInt(request.getParameter("id"));
 			
-			Product product = productDao.getProductById(id);
+			Animal animal = businessHandler.getAnimalById(id);
 			
-			request.setAttribute("product", product);
+			request.setAttribute("animal", animal);
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("product-form.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("Animal-form.jsp");
 			
 			dispatcher.forward(request, response);
 		}
 		
-		private void editProduct (HttpServletRequest request, HttpServletResponse response)
+		private void editAnimal (HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
 			
 			int id = Integer.parseInt(request.getParameter("id"));
-			String item = request.getParameter("item");
-			int qty = Integer.parseInt( request.getParameter("qty") );
-			String description = request.getParameter("description");
 			
-			Product product = new Product(id, item, qty, description);
+			Animal animal = businessHandler.getAnimalById(id);
 			
-			if(productDao.updateProduct(product)) {
-				System.out.println("UPDATED PRODUCT ID#" + id + " as\n" + product);
+			if(businessHandler.updateAnimal(animal)>0) {
+				System.out.println("UPDATED Animal ID#" + id + " as\n" + animal);
 			};
 			
 			response.sendRedirect("list");
 			
 		}
 		
-		private void goToNewProductForm(HttpServletRequest request, HttpServletResponse response) 
+		private void goToNewAnimalForm(HttpServletRequest request, HttpServletResponse response) 
 				throws ServletException, IOException {
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("product-form.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("animal-form.jsp");
 			
 			dispatcher.forward(request, response);
 			
 		}
 		
-		private void addNewProduct(HttpServletRequest request, HttpServletResponse response)
+		private void addNewAnimal(HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
 				
-				String item = request.getParameter("item");
-				int qty = Integer.parseInt( request.getParameter("qty") );
-				String description = request.getParameter("description");
+			int id = Integer.parseInt(request.getParameter("id"));
+			String animalType = request.getParameter("type");
+			String animalStatus = request.getParameter("status");
+			Date animalDate = Date.valueOf(request.getParameter("date"));
+			String animalImage = request.getParameter("animal image");
+			int locId = Integer.parseInt(request.getParameter("locId"));
+			
+				Animal animal = new Animal(id, animalType, animalStatus, animalDate, animalImage, locId);
 				
-				Product product = new Product(0, item, qty, description);
-				
-				if(productDao.addProduct(product)) {
-					System.out.println("CREATED PRODUCT" + " as\n" + product);
+				if(businessHandler.addAnimal(animal)) {
+					System.out.println("CREATED Animal" + " as\n" + animal);
 				};
 				
 				response.sendRedirect("list");
@@ -173,5 +174,5 @@ public class AnimalServlet extends HttpServlet {
 
 	}
 
-}
+
 

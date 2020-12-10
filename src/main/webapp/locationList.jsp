@@ -23,7 +23,7 @@
 		<c:forEach var="location" items= "${allLocations}">
 			<p><c:out value= "${location.name}"/></p>
 			<p><c:out value= "${location.phone}"/></p>
-			<p><c:out value= "${animal.address}"/></p>
+			<p><c:out value= "${location.address}"/></p>
 		</c:forEach>
 	</div>
 		<br></br>
