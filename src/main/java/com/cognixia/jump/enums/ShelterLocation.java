@@ -1,6 +1,6 @@
 package com.cognixia.jump.enums;
 
-public enum Location {
+public enum ShelterLocation {
 	NEW_YORK("New York", "NY", 1),
 	LOS_ANGELES("Los Angeles", "LA", 2),
 	CHICAGO("Chicago", "CHI", 3);
@@ -10,7 +10,7 @@ public enum Location {
 	private String acronym;
 	private int code;
 	
-	Location(String full, String acronym, int code) {
+	ShelterLocation(String full, String acronym, int code) {
 		this.setFull(full);
 		this.setAcronym(acronym);
 		this.setCode(code);

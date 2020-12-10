@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import com.cognixia.jump.dao.EntityHandler;
 import com.cognixia.jump.enums.AnimalStatus;
+import com.cognixia.jump.enums.ShelterLocation;
 import com.cognixia.jump.models.Address;
 import com.cognixia.jump.models.Animal;
 import com.cognixia.jump.models.Location;
@@ -31,10 +32,10 @@ public class BusinessHandler {
 		return new EntityHandler<Animal,Object>(Animal.class).readAllByAttribute(3, AnimalStatus.AVAILABLE.getText());
 	}
 	
-	public List<Animal> getAllAvailableAnimalsByLocation() {
+	public List<Animal> getAllAvailableAnimalsByLocation(ShelterLocation shelter) {
 		
 		return new EntityHandler<Animal, Object>(Animal.class).readAllByAttribute(3, AnimalStatus.AVAILABLE.getText()).
-				stream().filter( a -> a.getLocId()==com.cognixia.jump.enums.Location.getIdLocation()).collect(Collectors.toList());
+				stream().filter( a -> a.getLocId()==shelter.getCode()).collect(Collectors.toList());
 	}
 	public List<Address> getAllAddresses() {
 		return new EntityHandler<Address,Object>(Address.class).readAll();
@@ -60,5 +61,10 @@ public class BusinessHandler {
 		return (int) ChronoUnit.DAYS.between(new EntityHandler<Animal,Object>(Animal.class).readById(id).getAnimalDate().toLocalDate(), LocalDate.now());	
 			
 		
+	}
+	
+	
+	public static void main(String[] args) {
+		new BusinessHandler().getAllAvailableAnimalsByLocation(ShelterLocation.CHICAGO).stream().forEach(a->System.out.println(a));
 	}
 }

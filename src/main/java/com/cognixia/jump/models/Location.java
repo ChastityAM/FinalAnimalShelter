@@ -60,7 +60,7 @@ public void setAddress(int address) {
 
 @Override
 public String toString() {
-	return "Location [idLocation=" + idLocation + ", name=" + name + ", phone=" + phone + ", address=" + address + "]";
+	return "ShelterLocation [idLocation=" + idLocation + ", name=" + name + ", phone=" + phone + ", address=" + address + "]";
 }
 
 
