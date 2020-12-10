@@ -7,7 +7,9 @@ import java.sql.SQLException;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
-import com.cognixia.jump.constants.Crud;
+import com.cognixia.jump.enums.Crud;
+
+
 
 /***
  * This class helps produce a SQL inquiry String generically by using
@@ -170,7 +172,7 @@ public class QueryManager {
 		}	return sqlStatement;
 	}
 
-	public static Crud getOperation() {
+	public static com.cognixia.jump.enums.Crud getOperation() {
 		return operation;
 	}
 

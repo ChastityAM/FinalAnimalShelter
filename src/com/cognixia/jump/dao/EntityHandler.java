@@ -6,11 +6,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cognixia.jump.constants.Crud;
-import com.cognixia.jump.dao.abstracts.AbstractDAO;
-import com.cognixia.jump.util.db.ConnectionManager;
-import com.cognixia.jump.util.db.QueryManager;
-import com.cognixia.jump.util.reflection.MethodManager;
+import com.cognixia.jump.enums.Crud;
+import com.cognixia.jump.managers.ConnectionManager;
+import com.cognixia.jump.managers.MethodManager;
+import com.cognixia.jump.managers.QueryManager;
+
 
 
 

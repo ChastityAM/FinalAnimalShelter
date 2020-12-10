@@ -1,6 +1,6 @@
 package com.cognixia.jump.drivers;
 
-import com.cognixia.jump.util.db.ConnectionManager;
+import com.cognixia.jump.managers.ConnectionManager;
 
 public class ConnectionTest {
 	public static void main(String[] args) {

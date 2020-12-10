@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.cognixia.jump.business.BusinessHandler;
-import com.cognixia.jump.connection.ConnectionManager;
-import com.cognixia.jump.model.Product;
+import com.cognixia.jump.classes.Animal;
+import com.cognixia.jump.managers.ConnectionManager;
+
 
 
 @WebServlet("/")

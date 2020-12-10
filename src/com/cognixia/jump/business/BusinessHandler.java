@@ -5,11 +5,14 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.cognixia.jump.constants.AnimalStatus;
-import com.cognixia.jump.constants.Location;
-import com.cognixia.jump.dao.impl.EntityHandler;
-import com.cognixia.jump.entities.Animal;
-import com.cognixia.jump.entities.User;
+import com.cognixia.jump.classes.Address;
+import com.cognixia.jump.classes.Animal;
+import com.cognixia.jump.classes.Location;
+import com.cognixia.jump.classes.User;
+import com.cognixia.jump.dao.EntityHandler;
+import com.cognixia.jump.enums.AnimalStatus;
+
+
 
 
 //can be named something else
@@ -28,14 +31,10 @@ public class BusinessHandler {
 		return new EntityHandler<Animal,Object>(Animal.class).readAllByAttribute(3, AnimalStatus.AVAILABLE.getText());
 	}
 	
-	public List<Animal> getAllAvailableAnimalsByLocation(com.cognixia.jump.constants.Location location) {
+	public List<Animal> getAllAvailableAnimalsByLocation(com.cognixia.jump.classes.Location location) {
 		
-		return new EntityHandler<Animal, Object>(Animal.class).
-			readAllByAttribute(3, AnimalStatus.AVAILABLE.getText()).
-			stream().
-			filter( a -> a.getLoc_id()==location.getCode()).collect(Collectors.toList());
-		
-		return null;
+		return new EntityHandler<Animal, Object>(Animal.class).readAllByAttribute(3, AnimalStatus.AVAILABLE.getText()).
+				stream().filter( a -> a.getLocId()==location.getIdLocation()).collect(Collectors.toList());
 	}
 	public List<Address> getAllAddresses() {
 		return new EntityHandler<Address,Object>(Address.class).readAll();
@@ -58,8 +57,8 @@ public class BusinessHandler {
 	
 	public int getDaysInShelter(int id) {
 		
-		return (int) ChronoUnit.DAYS.between(new EntityHandler<Animal,Object>(Animal.class).readById(id).getAdmitted().toLocalDate(), LocalDate.now());	
+		return (int) ChronoUnit.DAYS.between(new EntityHandler<Animal,Object>(Animal.class).readById(id).getAnimalDate().toLocalDate(), LocalDate.now());	
 			
-		return 0;
+		
 	}
 }
