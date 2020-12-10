@@ -63,6 +63,10 @@ public class BusinessHandler {
 		
 	}
 	
+	public Animal getAnimalById(int id) {
+		return new EntityHandler<Animal,Object>(Animal.class).readById(id);
+	}
+	
 	public boolean deleteAnimalById(int id) {
 		return new EntityHandler<Animal,Object>(Animal.class).deleteById(id);
 	}
