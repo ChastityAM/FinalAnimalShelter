@@ -1,6 +1,5 @@
 package com.cognixia.jump.managers;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,21 +17,31 @@ import java.util.Properties;
 import java.util.Set;
 
 public class ConnectionManager { 
-	private static Connection sqlConnection = null;
-	private ConnectionManager() {}
+	public static Connection sqlConnection = null;
+	//private ConnectionManager() {}
+	private static final String URL = "jdbc:mysql://den1.mysql2.gear.host/classprojectyo ";
+	private static final String USERNAME = "classprojectyo";
+	private static final String PASSWORD = "Ft9u?CBI-SUS";
+	
 	public static Connection getConnection() {
-		Properties properties = new Properties();
-		File file = new File("resources/config.properties");
-		InputStream inputStream;
+		//Properties properties = new Properties();
+		//File file = new File("resources/config.properties");
+		//InputStream inputStream;
 		try {
-			inputStream = new FileInputStream(file);
-			properties.load(inputStream);
-			Class.forName(properties.getProperty("com.mysql.cj.jdbc.Driver"));
-			sqlConnection = DriverManager.getConnection
-					(properties.getProperty("url"), properties.getProperty("username"), properties.getProperty("password"));
-		} catch (IOException | ClassNotFoundException | SQLException e) {
+			//inputStream = new FileInputStream(file);
+			//properties.load(inputStream);
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			sqlConnection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+			System.out.println("DB STATUS: connection successfully made.");
+					//(properties.getProperty("url"), properties.getProperty("username"), properties.getProperty("password"));
+		} catch (SQLException e) {
 			e.printStackTrace();
-		}	return sqlConnection; 
+		}	catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		return sqlConnection;
+		
     }
  
 	public static boolean testConnection() {
@@ -91,3 +100,4 @@ public class ConnectionManager {
 	}
     
 }
+
