@@ -24,7 +24,7 @@ public class Animal {
 		this.animalImage = animalImage;
 	}
 
-	public Animal(int idAnimal, String animalType, String animalStatus, Date animalDate, int locId, String animalImage) {
+	public Animal(int idAnimal, String animalType, String animalStatus, Date animalDate, String animalImage, int locId) {
 		
 		this.idAnimal = idAnimal;
 		this.animalType = animalType;
