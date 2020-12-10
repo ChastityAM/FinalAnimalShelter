@@ -83,9 +83,9 @@
                 Our Locations
             </button>
             <div class="dropdown-menu modal-trigger">
-                <a class="LA dropdown-item" href="LA.html">Los Angeles</a>
-                <a class="NY dropdown-item" href="NY.html">New York</a>
-                <a class="Chi dropdown-item" href="Chi.html">Chicago</a>
+                <a class="LA dropdown-item" href="LA.jsp">Los Angeles</a>
+                <a class="NY dropdown-item" href="NY.jsp">New York</a>
+                <a class="Chi dropdown-item" href="Chi.jsp">Chicago</a>
             </div>
         </div>
         <div class="col-sm"></div>
@@ -140,7 +140,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center container-sm">
-                    <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/03/15/17/pixel-dogsofinstagram-3-15-19.jpg"
+                    <img src= <%%>
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 1</b></br>
                     Date: <br>

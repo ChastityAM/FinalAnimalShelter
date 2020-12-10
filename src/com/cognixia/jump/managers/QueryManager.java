@@ -172,7 +172,7 @@ public class QueryManager {
 		}	return sqlStatement;
 	}
 
-	public static com.cognixia.jump.enums.Crud getOperation() {
+	public static Crud getOperation() {
 		return operation;
 	}
 

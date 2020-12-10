@@ -26,9 +26,6 @@ public class MethodManager {
 			e.printStackTrace();
 		}	return o;
 	}
-
-	
-	
 	
 	public static Object invokeSetter(Object object, String propertyName, Object variableValue)	{
 		Object o = null;

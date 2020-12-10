@@ -22,12 +22,12 @@ public class ConnectionManager {
 	private ConnectionManager() {}
 	public static Connection getConnection() {
 		Properties properties = new Properties();
-		File file = new File("resources\\config.properties");
+		File file = new File("resources/config.properties");
 		InputStream inputStream;
 		try {
 			inputStream = new FileInputStream(file);
 			properties.load(inputStream);
-			Class.forName(properties.getProperty("driver"));
+			Class.forName(properties.getProperty("com.mysql.cj.jdbc.Driver"));
 			sqlConnection = DriverManager.getConnection
 					(properties.getProperty("url"), properties.getProperty("username"), properties.getProperty("password"));
 		} catch (IOException | ClassNotFoundException | SQLException e) {
@@ -73,4 +73,21 @@ public class ConnectionManager {
 			}
 		}	return connected;
 	}
+	
+	public static void main(String[] args) throws SQLException {
+        Connection conn = ConnectionManager.getConnection();
+        if (sqlConnection != null) {
+            System.out.println("main Connection made.");
+        } else {
+            System.out.println("main Connection failed.");
+        }
+        
+        try {
+            conn.close();
+            System.out.println("Closed Connection");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+	}
+    
 }

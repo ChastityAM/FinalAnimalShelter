@@ -1,4 +1,4 @@
-package com.cognixia.jump.drivers;
+package com.cognixia.jump.managers;
 
 public class SiteDriver {
 
