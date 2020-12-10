@@ -8,8 +8,8 @@ public class Animal {
 	private String animalType;
 	private String animalStatus;
 	private Date animalDate;
-	private int locId;
 	private String animalImage;
+	private int locId;
 	
 	public Animal (){
 		
