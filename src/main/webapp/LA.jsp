@@ -81,9 +81,9 @@
                 Our Locations
             </button>
             <div class="dropdown-menu modal-trigger">
-                <a class="LA dropdown-item" href="LA.html">Los Angeles</a>
-                <a class="NY dropdown-item" href="NY.html">New York</a>
-                <a class="Chi dropdown-item" href="Chi.html">Chicago</a>
+                <a class="LA dropdown-item" href="LA.jsp">Los Angeles</a>
+                <a class="NY dropdown-item" href="NY.jsp">New York</a>
+                <a class="Chi dropdown-item" href="Chi.jsp">Chicago</a>
             </div>
         </div>
         <div class="col-sm"></div>

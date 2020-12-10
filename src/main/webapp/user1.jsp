@@ -116,10 +116,10 @@
         <div class="content">
             <div class="body">
                 <div class="form-group">
-                    <label for="name">First and Last Name:</label><br>
-                    <label for="Phone Number">Phone Number:</label><br>
-                    <label for="Email">Email:</label><br>
-                    <label for="password">Password:</label><br>
+                    <label for="name">First and Last Name:</label><textarea></textarea><br>
+                    <label for="Phone Number">Phone Number:</label><textarea></textarea><br>
+                    <label for="Email">Email:</label><textarea></textarea><br>
+                    <label for="password">Password:</label><textarea></textarea><br>
                 </div>
                 <form action="#">
                     <div class="form-group">
