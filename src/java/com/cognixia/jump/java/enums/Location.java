@@ -3,7 +3,7 @@ package com.cognixia.jump.constants;
 public enum Location {
 	NEW_YORK("New York", "NY", 1),
 	LOS_ANGELES("Los Angeles", "LA", 2),
-	DALLAS("Dallas", "DA", 3);
+	CHICAGO("Chicago", "CHI", 3);
 	
 	
 	private String full;
