@@ -12,8 +12,7 @@ import com.cognixia.jump.constants.Crud;
 /***
  * This class helps produce a SQL inquiry String generically by using
  * class type, declared fields or ResultSetMetadata
- * @author teddy4eva
- *
+ * 
  */
 
 public class QueryManager {

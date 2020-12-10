@@ -29,17 +29,17 @@ public class BusinessHandler {
 	}
 	
 	public List<Animal> getAllAvailableAnimalsByLocation(com.cognixia.jump.constants.Location location) {
-		/*
-		 * can be defined once pojos are finalized.
-		 * 
+		
 		return new EntityHandler<Animal, Object>(Animal.class).
 			readAllByAttribute(3, AnimalStatus.AVAILABLE.getText()).
 			stream().
 			filter( a -> a.getLoc_id()==location.getCode()).collect(Collectors.toList());
-		*/
+		
 		return null;
 	}
-	
+	public List<Address> getAllAddresses() {
+		return new EntityHandler<Address,Object>(Address.class).readAll();
+	}
 	public List<Location> getAllLocations() {
 		return new EntityHandler<Location,Object>(Location.class).readAll();
 	}
@@ -57,11 +57,9 @@ public class BusinessHandler {
 	}
 	
 	public int getDaysInShelter(int id) {
-		/*
-		 * can be defined once pojos are finalized.
-		 * 
+		
 		return (int) ChronoUnit.DAYS.between(new EntityHandler<Animal,Object>(Animal.class).readById(id).getAdmitted().toLocalDate(), LocalDate.now());	
-		*/		
+			
 		return 0;
 	}
 }
