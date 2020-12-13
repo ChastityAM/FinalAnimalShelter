@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
+   <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,6 +101,8 @@
             <div class="col center"></div>
             Log In
         </button>
+            <a  href="<%= request.getContextPath() %>/test">Home</a>
+      
     </div>
 </body>
 <header class="font size: 12vw">
@@ -143,10 +146,10 @@
 			</div>
 		</div>
 		<c:forEach var="animal" items= "${allAnimals}">
-			<p><c:out value= "${animal.type}"/></p>
-			<p><c:out value= "${animal.status}"/></p>
-			<p><c:out value= "${animal.date}"/></p>
-			<p><c:out value= "${animal.image}"/></p>
+			<p><c:out value= "${animal.animalType}"/></p>
+			<p><c:out value= "${animal.animalStatus}"/></p>
+			<p><c:out value= "${animal.animalDate}"/></p>
+			<p><c:out value= "${animal.animalImage}"/></p>
 		</c:forEach>
 	</div>
         <title> Animals</title>
@@ -155,7 +158,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center container-sm">
-                    <img src= <%%>
+                    <img src= ""
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 1</b></br>
                     Date: <br>
