@@ -443,7 +443,6 @@
                             <input type="password" class="form-control" placeholder="Enter Password" id="password">
                         </div>
                         <button type="Submit" class="btn btn-primary">Submit
-                        <a class="Submit button" href="user1.jsp"></a>
                         </button>
                     </form>
                 </div>
@@ -470,11 +469,12 @@
                         <div class="form-group">
                             <label for="Email">Email:</label>
                             <input type="Email" class="form-control" placeholder="Enter Email" id="Email">
+                            <fieldset class="form-group" value=<c:out value='${User_email }'/>" name="email" required/>
                         </div>
 
                         <div class="form-group">
                             <label for="password">Password:</label>
-                            <input type="password" class="form-control" placeholder="Enter Password" id="password">
+                            <input type="password" class="form-control" placeholder="Enter Password" id="password" value=<c:out value='${User_password }'/>" name="password" required/>
                         </div>
 
                         <div class="form-group form-check">
