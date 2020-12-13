@@ -27,6 +27,11 @@ public class AnimalServlet extends HttpServlet {
 		@Override
 	    public void init() {
 	        businessHandler = new BusinessHandler();
+	        System.out.println("Started Servlet");
+	        List<Animal> allAnimals = businessHandler.getAllAvailableAnimals();
+	        getServletContext().setAttribute("allAnimals", allAnimals);
+	        System.out.println(allAnimals);
+	       
 	    }
 	   
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) 
@@ -42,9 +47,11 @@ public class AnimalServlet extends HttpServlet {
 			// depending on ending url path, will redirect our servlet to complete
 			// one of the actions in the switch case below
 			String action = request.getServletPath();
-			
+			System.out.println(action);
 			switch (action) {
-			
+			case "/test":
+				System.out.println("Hello");
+				break;
 			case "/":
 				listAnimals(request, response);
 				break;
@@ -82,7 +89,7 @@ public class AnimalServlet extends HttpServlet {
 			}
 		}
 
-
+	
 		
 		
 		private void listAnimals(HttpServletRequest request, HttpServletResponse response) 
@@ -93,7 +100,7 @@ public class AnimalServlet extends HttpServlet {
 			       
 			        //Store the list of animals above into a request object that can go to a JSP
 			        request.setAttribute("allAnimals",  allAnimals);
-			        
+			        System.out.println(allAnimals);
 			        //Say where that request object above is going to go
 			        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			        

@@ -10,23 +10,77 @@
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 		crossorigin="anonymous">
-</head>
-<body>
-	<div class="container">
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h1 class="display-4">Adoptable Animal List</h1>
-					<p class="Lead"> The information for all available animals is below.
-					</p>
-			</div>
+<div class="container">
+
+	<h1>Animal Form</h1>
+	
+	<div class="card-body">
+
+		<%-- will select the form we use, update or insert --%>
+		<c:if test="${ animal != null }">
+			<form action="update" method="get">
+			<h1>Update Animal</h1>
+		</c:if>
+
+		<c:if test="${ animal == null }">
+			<form action="insert" method="get">
+			<h1>Add Animal</h1>
+		</c:if>
+				
+				
+		<%-- hidden input we can use to pass in a value we want --%>
+		<c:if test="${animal != null}">
+			<input type="hidden" name="id" value="<c:out value='${animal.id}' />" />
+		</c:if>
+				
+		<!-- item field -->
+		<fieldset class="form-group">
+					
+			<label>Type</label>
+			<input type="text" value="<c:out value='${ animal.type }'/>" 
+				class="form-control" name="item" required>
+					
+		</fieldset>
+				
+		<fieldset class="form-group">
+					
+			<label>Status</label>
+			<input type="text" value="<c:out value='${ animal.status }'/>" 
+				class="form-control" name="status" required>
+					
+		</fieldset>
+				
+		<fieldset class="form-group">
+					
+			<label>Date</label>
+			<input type="date" value="<c:out value='${ animal.date }'/>" 
+				class="form-control" name="date" required>
+					
+		</fieldset>
+				
+		<fieldset class="form-group">
+					
+			<label>Image</label>
+			<input type="url" value="<c:out value='${ animal.image }'/>" 
+				class="form-control" name="image" required>
+					
+		</fieldset>
+		
+		<fieldset class="form-group">
+					
+			<label>LocId</label>
+			<input type="number" value="<c:out value='${ animal.locID }'/>" 
+				class="form-control" name="locId" required>
+					
+		</fieldset>		
+
+		<button type="submit" class="btn btn-success">Save</button>
+
+		</form>
+
 		</div>
-		<c:forEach var="animal" items= "${allAvailableAnimalsByLocation}">
-			<p><c:out value= "${animal.type}"/></p>
-			<p><c:out value= "${animal.status}"/></p>
-			<p><c:out value= "${animal.date}"/></p>
-			<p><c:out value= "${animal.image}"/></p>
-		</c:forEach>
-	</div>
+	
+</div>
 		<br></br>
 </body>
 </html>
