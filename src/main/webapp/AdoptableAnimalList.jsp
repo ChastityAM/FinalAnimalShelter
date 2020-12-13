@@ -12,62 +12,74 @@
 		crossorigin="anonymous">
 <div class="container">
 
-	<h1>Product Form</h1>
+	<h1>Animal Form</h1>
 	
 	<div class="card-body">
 
 		<%-- will select the form we use, update or insert --%>
-		<c:if test="${ product != null }">
+		<c:if test="${ animal != null }">
 			<form action="update" method="get">
-			<h1>Update Product</h1>
+			<h1>Update Animal</h1>
 		</c:if>
 
-		<c:if test="${ product == null }">
+		<c:if test="${ animal == null }">
 			<form action="insert" method="get">
-			<h1>Create Product</h1>
+			<h1>Add Animal</h1>
 		</c:if>
 				
 				
 		<%-- hidden input we can use to pass in a value we want --%>
-		<c:if test="${product != null}">
-			<input type="hidden" name="id" value="<c:out value='${product.id}' />" />
+		<c:if test="${animal != null}">
+			<input type="hidden" name="id" value="<c:out value='${animal.id}' />" />
 		</c:if>
 				
 		<!-- item field -->
 		<fieldset class="form-group">
 					
-			<label>Item</label>
-			<input type="text" value="<c:out value='${ product.item }'/>" 
+			<label>Type</label>
+			<input type="text" value="<c:out value='${ animal.type }'/>" 
 				class="form-control" name="item" required>
 					
 		</fieldset>
 				
 		<fieldset class="form-group">
 					
-			<label>Quantity</label>
-			<input type="number" value="<c:out value='${ product.qty }'/>" 
-				class="form-control" name="qty" required>
+			<label>Status</label>
+			<input type="text" value="<c:out value='${ animal.status }'/>" 
+				class="form-control" name="status" required>
 					
 		</fieldset>
 				
 		<fieldset class="form-group">
 					
-			<label>Description</label>
-			<input type="text" value="<c:out value='${ product.description }'/>" 
-				class="form-control" name="description" required>
+			<label>Date</label>
+			<input type="date" value="<c:out value='${ animal.date }'/>" 
+				class="form-control" name="date" required>
 					
 		</fieldset>
 				
+		<fieldset class="form-group">
+					
+			<label>Image</label>
+			<input type="url" value="<c:out value='${ animal.image }'/>" 
+				class="form-control" name="image" required>
+					
+		</fieldset>
+		
+		<fieldset class="form-group">
+					
+			<label>LocId</label>
+			<input type="number" value="<c:out value='${ animal.locID }'/>" 
+				class="form-control" name="locId" required>
+					
+		</fieldset>		
 
 		<button type="submit" class="btn btn-success">Save</button>
 
 		</form>
 
-
 		</div>
 	
-	
-
 </div>
 		<br></br>
 </body>
