@@ -135,18 +135,12 @@
     </div>
     <aside>
     <div class="container">
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h1 class="display-4">Adoptable Animal List</h1>
-					<p class="Lead"> The information for all available animals is below.
-					</p>
-			</div>
-		</div>
 		<c:forEach var="animal" items= "${allAnimals}">
 			<p><c:out value= "${animal.type}"/></p>
 			<p><c:out value= "${animal.status}"/></p>
 			<p><c:out value= "${animal.date}"/></p>
 			<p><c:out value= "${animal.image}"/></p>
+			<p><c:out value= "${Loc.id}"/></p>
 		</c:forEach>
 	</div>
         <title> Animals</title>
@@ -157,9 +151,18 @@
                 <div class="col text-center container-sm">
                     <img src= <%%>
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
-                    <br><b>Dog 1</b></br>
-                    Date: <br>
-                    Location:
+                    <br>
+					<fieldset class="form-group">
+						<label>Dog1</label>
+							<input type="text" value=<c:out value='${animal.type }'/>"
+							class="form-control" name="type" required/>
+						<label>Date</label>
+								<input type="text" value=<c:out value='${animal.date }'/>"
+							class="form-control" name="date" required/>
+						<label>Location</label>
+			<input type="text" value=<c:out value='${Loc.id }'/>"
+				class="form-control" name="id" required/>
+					</fieldset>
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cute-dogs-wallpapers1.jpg"
@@ -439,7 +442,9 @@
                             <label for="password">Password:</label>
                             <input type="password" class="form-control" placeholder="Enter Password" id="password">
                         </div>
-                        <button type="Submit" class="btn btn-primary">Submit</button>
+                        <button type="Submit" class="btn btn-primary">Submit
+                        <a class="Submit button" href="user1.jsp"></a>
+                        </button>
                     </form>
                 </div>
                 <!-- Modal footer -->
@@ -479,6 +484,7 @@
                         </div>
 
                         <button type="Submit" class="btn">Submit</button>
+                        <a class="User" href="user1.jsp"></a>
                     </form>
                 </div>
 
