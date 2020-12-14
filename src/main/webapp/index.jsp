@@ -154,20 +154,13 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center container-sm">
-                    <img src= ""
+
+                    <img src= "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/03/15/17/pixel-dogsofinstagram-3-15-19.jpg"
+
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
-                    <br>
-					<fieldset class="form-group">
-						<label>Dog1</label>
-							<input type="text" value=<c:out value='${animal.type }'/>"
-							class="form-control" name="type" required/>
-						<label>Date</label>
-								<input type="text" value=<c:out value='${animal.date }'/>"
-							class="form-control" name="date" required/>
-						<label>Location</label>
-			<input type="text" value=<c:out value='${Loc.id }'/>"
-				class="form-control" name="id" required/>
-					</fieldset>
+                    <br><b>Dog 1</b></br>
+                    Date: <br>
+                    Location:
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cute-dogs-wallpapers1.jpg"
@@ -204,13 +197,18 @@
                     Date: <br>
                     Location:
                 </div>
-                <div class="row">
-                    <p>
-                        <button type="button" class="btn btn-secondary">
-                            <div class="col center"></div>
-                            More Inventory
-                        </button>
-                    </p>
+                 <br>
+                <div class="row container">
+                    <div class="col-sm">
+                        <div class="row">
+                            <p>
+                                <button type="button" class="btn btn-secondary">
+                                    <div class="col center"></div>
+                                    More Inventory
+                                </button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,14 +257,19 @@
                 Date: <br>
                 Location:
             </div>
-            <br>
-            <div class="row">
-                <p>
-                    <button type="button" class="btn btn-secondary">
-                        <div class="col center"></div>
-                        More Inventory
-                    </button>
-                </p>
+             <br>
+                <div class="row container">
+                    <div class="col-sm">
+                        <div class="row">
+                            <p>
+                                <button type="button" class="btn btn-secondary">
+                                    <div class="col center"></div>
+                                    More Inventory
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -314,14 +317,19 @@
                 Date: <br>
                 Location:
             </div>
-            <br>
-            <div class="row">
-                <p>
-                    <button type="button" class="btn btn-secondary">
-                        <div class="col center"></div>
-                        More Inventory
-                    </button>
-                </p>
+             <br>
+                <div class="row container">
+                    <div class="col-sm">
+                        <div class="row">
+                            <p>
+                                <button type="button" class="btn btn-secondary">
+                                    <div class="col center"></div>
+                                    More Inventory
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -370,14 +378,19 @@
                 Date: <br>
                 Location:
             </div>
-            <br>
-            <div class="row">
-                <p>
-                    <button type="button" class="btn btn-secondary">
-                        <div class="col center"></div>
-                        More Inventory
-                    </button>
-                </p>
+             <br>
+                <div class="row container">
+                    <div class="col-sm">
+                        <div class="row">
+                            <p>
+                                <button type="button" class="btn btn-secondary">
+                                    <div class="col center"></div>
+                                    More Inventory
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -448,7 +461,6 @@
                             <input type="password" class="form-control" placeholder="Enter Password" id="password">
                         </div>
                         <button type="Submit" class="btn btn-primary">Submit
-                        <a class="Submit button" href="user1.jsp"></a>
                         </button>
                     </form>
                 </div>

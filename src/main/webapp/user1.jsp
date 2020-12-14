@@ -116,10 +116,18 @@
         <div class="content">
             <div class="body">
                 <div class="form-group">
-                    <label for="name">First and Last Name:</label><textarea></textarea><br>
-                    <label for="Phone Number">Phone Number:</label><textarea></textarea><br>
-                    <label for="Email">Email:</label><textarea></textarea><br>
-                    <label for="password">Password:</label><textarea></textarea><br>
+                    <label for="name">First and Last Name: 
+                    	<fieldset class="form-group" value=<c:out value='${User_name }'/>" name="name" required/><br>
+                    </label>
+                    <label for="Phone Number">Phone Number: 
+ 						<fieldset class="form-group" value=<c:out value='${User_phone }'/>" name="phone" required/><br>
+                    </label>
+                    <label for="Email">Email:
+	 						<fieldset class="form-group" value=<c:out value='${User_email }'/>" name="email" required/><br>
+                    </label>
+                    <label for="password">Password: 
+						<fieldset class="form-group" value=<c:out value='${User_password }'/>" name="password" required/><br>
+                	</label>
                 </div>
                 <form action="#">
                     <div class="form-group">
