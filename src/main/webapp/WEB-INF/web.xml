@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  		<servlet-name>AnimalServlet</servlet-name>
+  		<display-name>AnimalServlet</display-name>
+  		<description></description>
+  		<servlet-class>com.cognixia.jump.web.AnimalServlet</servlet-class>
+  		<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AnimalServlet</servlet-name>
+  	<url-pattern>/AnimalServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
