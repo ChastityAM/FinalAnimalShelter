@@ -104,7 +104,7 @@ public class AnimalServlet extends HttpServlet {
 			        //Say where that request object above is going to go
 			        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 			        
-			        //sendit
+			        //send it
 			        dispatcher.forward(request, response);
 			    }
 		
@@ -166,7 +166,7 @@ public class AnimalServlet extends HttpServlet {
 			String animalType = request.getParameter("type");
 			String animalStatus = request.getParameter("status");
 			Date animalDate = Date.valueOf(request.getParameter("date"));
-			String animalImage = request.getParameter("animal image");
+			String animalImage = request.getParameter("animalImage");
 			int locId = Integer.parseInt(request.getParameter("locId"));
 			
 				Animal animal = new Animal(id, animalType, animalStatus, animalDate, animalImage, locId);
