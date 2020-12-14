@@ -34,6 +34,14 @@ public class Animal {
 		this.animalImage = animalImage;
 	}
 
+	public Animal(String animalType, String animalStatus, Date animalDate, String animalImage, int locId) {
+		this.animalType = animalType;
+		this.animalStatus = animalStatus;
+		this.animalDate = animalDate;
+		this.locId = locId;
+		this.animalImage = animalImage;
+	}
+
 	public int getIdAnimal() {
 		return idAnimal;
 	}

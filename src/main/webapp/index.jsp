@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false" %>
    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -91,6 +91,26 @@
         </div>
         <div class="col-sm"></div>
         <div class="col-sm"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
+  		
+		    <ul class="navbar-nav">
+		    
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="<%= request.getContextPath() %>/list">View</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="<%= request.getContextPath() %>/new">Rehome</a>
+		      	</li>
+		      
+		    </ul>
+		    
+  		</div>
+	</nav>
         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#registerModal"
             data-modal-id="registerModal">
             <div class="col center"></div>
@@ -137,17 +157,6 @@
             height="350" width="auto" class="mx-auto d-block rounded">
     </div>
     <aside>
-    <div class="container">
-		<c:forEach var="animal" items= "${allAnimals}">
-
-			<p><c:out value= "${animal.animalType}"/></p>
-			<p><c:out value= "${animal.animalStatus}"/></p>
-			<p><c:out value= "${animal.animalDate}"/></p>
-			<p><c:out value= "${animal.animalImage}"/></p>
-			<p><c:out value= "${animal.animalId}"/></p>
-
-		</c:forEach>
-	</div>
         <title> Animals</title>
 
         <h2 id="Dogs"><u>Dogs</u></h2>
@@ -155,19 +164,23 @@
             <div class="row">
                 <div class="col text-center container-sm">
 
+
                     <img src= "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/03/15/17/pixel-dogsofinstagram-3-15-19.jpg"
 
                         alt="Dog 1" width="150" height="150" class="rounded-circle cover">
                     <br><b>Dog 1</b></br>
                     Date: <br>
+                    Status: <br>
                     Location:
+
                 </div>
                 <div class="col text-center container-sm">
                     <img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cute-dogs-wallpapers1.jpg"
                         alt="Dog 2" height="150" width="150" class="rounded-circle cover">
                     <br><b>Dog 2</b></br>
-                    Date: <br>
-                    Location:
+                    Date: 	<c:out value= "${animal.animalDate}"/><br>
+                    Status: <c:out value= "${animal.animalStatus}"/><br>
+                    Location: <c:out value= "${animal.locId}"/> <br>
                 </div>
                 <div class="col text-center container-sm">
                     <img src="https://tse1.mm.bing.net/th?id=OIP.UBhxl3q--w2lxUjfHD_SmwHaEo&pid=Api&P=0&w=263&h=165"
@@ -215,8 +228,8 @@
         <br>
         <h2 id="Cats"><u>Cats</u></h2>
         <div class="row">
-            <div class="col text-center container-sm"><img
-                    src="http://2.bp.blogspot.com/-k_IJQ-pxheI/T9ufytUpqaI/AAAAAAAAAEI/4SfFDfvy_RY/s1600/Cute-Cats-008.jpg"
+            <div class="col text-center container-sm">
+            <img src="http://2.bp.blogspot.com/-k_IJQ-pxheI/T9ufytUpqaI/AAAAAAAAAEI/4SfFDfvy_RY/s1600/Cute-Cats-008.jpg"
                     alt="Cat 1" height="150" width="150" class="rounded-circle cover">
                 <br><b>Cat 1</b></br>
                 Date: <br>

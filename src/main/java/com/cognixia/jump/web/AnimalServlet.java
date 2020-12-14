@@ -52,7 +52,7 @@ public class AnimalServlet extends HttpServlet {
 			case "/test":
 				System.out.println("Hello");
 				break;
-			case "/":
+			case "/list":
 				listAnimals(request, response);
 				break;
 			case "/delete":
@@ -102,7 +102,7 @@ public class AnimalServlet extends HttpServlet {
 			        request.setAttribute("allAnimals",  allAnimals);
 			        System.out.println(allAnimals);
 			        //Say where that request object above is going to go
-			        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+			        RequestDispatcher dispatcher = request.getRequestDispatcher("AdoptableAnimalList.jsp");
 			        
 			        //send it
 			        dispatcher.forward(request, response);
@@ -130,7 +130,7 @@ public class AnimalServlet extends HttpServlet {
 			
 			request.setAttribute("animal", animal);
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("Animal-form.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("animal-form.jsp");
 			
 			dispatcher.forward(request, response);
 		}
@@ -139,8 +139,13 @@ public class AnimalServlet extends HttpServlet {
 				throws ServletException, IOException {
 			
 			int id = Integer.parseInt(request.getParameter("id"));
+			String animalType = request.getParameter("type");
+			String animalStatus = request.getParameter("status");
+			Date animalDate = Date.valueOf(request.getParameter("date"));
+			String animalImage = request.getParameter("animalImage");
+			int locId = Integer.parseInt(request.getParameter("locId"));
 			
-			Animal animal = businessHandler.getAnimalById(id);
+			Animal animal = new Animal(id, animalType, animalStatus, animalDate, animalImage, locId);
 			
 			if(businessHandler.updateAnimal(animal)>0) {
 				System.out.println("UPDATED Animal ID#" + id + " as\n" + animal);
@@ -162,14 +167,13 @@ public class AnimalServlet extends HttpServlet {
 		private void addNewAnimal(HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
 				
-			int id = Integer.parseInt(request.getParameter("id"));
 			String animalType = request.getParameter("type");
 			String animalStatus = request.getParameter("status");
 			Date animalDate = Date.valueOf(request.getParameter("date"));
 			String animalImage = request.getParameter("animalImage");
 			int locId = Integer.parseInt(request.getParameter("locId"));
 			
-				Animal animal = new Animal(id, animalType, animalStatus, animalDate, animalImage, locId);
+				Animal animal = new Animal(animalType, animalStatus, animalDate, animalImage, locId);
 				
 				if(businessHandler.addAnimal(animal)) {
 					System.out.println("CREATED Animal" + " as\n" + animal);
